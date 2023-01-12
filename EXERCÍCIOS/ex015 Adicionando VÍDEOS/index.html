@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando vídeos</title>
+</head>
+<body>
+    <h1>Acrescentando vídeos hospedados localmente</h1>
+    <!-- Para testes, posso usar o site PEXELS. Arquivos MP4, WEBM, M4V, OGV -->
+    <p>Este vídeo está hospedado no meu PC</p>
+
+    <video width="560" poster="capa/thumb.png" controls autoplay loop>
+        <source src="midia/praia1080.mp4" type="video/mp4">
+        <source src="midia/Praia720.mkv" type="video/mp4">
+        <source src="midia/Praia480.webm" type="video/webm">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <!-- WIDTH regula a largura do vídeo, POSTER adiciona uma capa ao vídeo, que deve estar na mesma pasta de arquivos, CONTROLS acrescenta os controles de reprodução do vídeo, AUTOPLAY e LOOP vão permitir que o vídeo reinicie assim que terminar a reprodução-->
+    <!-- MAS ESSE CÓDIGO ACIMA TERÁ UM GRANDE CUSTO DE HOSPEDAGEM AO DONO DO SITE. PORTANTO, FAREI UM CÓDIGO USANDO HOSPEDAGEM EM SERVIDORES EXTERNOS, COM YOUTUBE ou VIMEO, POR EXEMPLO -->
+
+    <H1>Inserindo vídeos do Youtube</H1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xRRwKZXjK9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

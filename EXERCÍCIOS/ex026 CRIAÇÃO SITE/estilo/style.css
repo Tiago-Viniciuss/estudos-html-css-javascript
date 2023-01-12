@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url("../fontes/idroid.otf") format('opentype');
+    font-weight: normal;
+}
+
+:root{   
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica,sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+/* Aqui, criei VARIÁVEIS que servirão de atalho para editar as cores de todas as linhas que eu necessitar.
+Toda variável deve começar com --. 
+Ao invés de editar a cor na linha, eu insiro a variável usando a tag VAR().*/ 
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* O asterisco usado assim, serve como seletor universal dentro do estilo. No caso acima, TODAS as linhas ficaram com margin e padding 0. Mas eu posso alterar cada uma, individualmente, depois. */
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\00a0\1F517';
+} 
+
+/* Aqui, foi criada uma CLASS chamada "externo" e nela eu declarei que tod link externo terá o símbolo da 'corrente de link'. Para isso, peguei o código da corrente no EMOJIPEDIA e colei aqui. O código só funciona se eu usar uma \ antes. a \00a0 que eu pus antes do código \1F517, servem para dar espaço */
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5) );
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-shadow: 4px 4px #00000097;
+}
+
+/* Neste caso, em específico, H1 está dentro de HEADER e está ligado a header em primeiro grau, então eu preciso especificar com o sinal de MAIOR > */
+
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #00000097;
+}
+
+nav {
+
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.508);
+}
+
+nav > a {
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    border-radius: 5px;
+    color: var(--cor5);
+    background-color: var(--cor3);
+
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.533);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main  img {
+    width: 100%;
+}
+
+/* O sinal de maior não deve ser usado para indicar que X ESTÁ DENTRO DE Y em situaões que hajam outros outras tags antes. Como ARTICLE; DIV; etc. */
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font: 1.8em;
+}
+
+main h2 {
+    font-weight: normal;
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+/* TEXT INDENT é usado para dar um espaço no início do parágrafo */
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* No h3 acima, foi usado margem negativa */
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    min-width: 431px;
+}
+
+/* Na lista acima, foi usado um comando pra posicionar a lista dentro do aside. E outro comando para dividir a lista em duas colunas. */
+
+aside h3 {
+    padding: 20px;
+}
+aside p {
+    text-indent: 0em;
+    padding: 10px;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+   color: white;
+   font-weight: bolder;
+   text-decoration: none; 
+   padding: 5px;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #979393;
+    margin: 0px;
+}
+header{
+    background-image: url(Rio\ Tejo.jpg);
+    padding: 30px;
+    margin: 10px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.tituloprincipal{
+    background-color: rgb(0, 0, 0);
+    width: 185px;
+    color: white;
+    text-align: center;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 5px;
+}
+
+nav{
+    background-color: rgb(31, 31, 31);
+    box-shadow: 5px 5px 5px lightslategray ;
+    width: 570px;
+    border-radius: 5px;
+
+}
+
+nav>a{
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 3px 2px 1px 5px;
+    text-align: justify;
+}
+
+nav>a:hover{
+    text-decoration: underline;
+}
+
+main{
+    width: 980px;
+    background-image: linear-gradient(to right, #44405B, #7C5E76, #D79C8E);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    float: left;
+}
+
+article{
+background-image: linear-gradient(to right, );
+padding: 2px 2px 2px 5px;
+}
+
+.esporte{
+    background-color: #D79C8E;
+    
+}
+
+.noticias{
+    background-color: #D79C8E;
+    
+}
+
+.titulocolor{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 190px;
+    border-radius: 5px;
+    padding-left: 2px;
+}
+
+.titulocolor2{
+    background-color: rgb(0, 0, 0);
+    color: white;   
+    width: 265px;
+    padding-left: 2px;
+    border-radius: 5px;
+}
+
+.titulocolor3{
+    background-color: rgb(0, 0, 0);
+    color: white;   
+    width: 300px;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+.titulocolor3:hover{
+    text-decoration: underline;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+    height: 30px;
+    clear: both;
+}
+
+
+article> aside{
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+p{
+    text-align: justify;
+    width: 500px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+p:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 5px white;
+}
+
+aside>p.escritortext:hover{
+    background-color:  rgb(0, 0, 0);
+}
+
+.escritor{
+    width: 175px;
+    margin: auto;
+    text-align: center;
+    border-radius: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.511)   ;
+
+}
+
+aside>p.escritortext{
+    text-align: center;
+    padding: 1px;
+    width: 170px;
+}
+
+.rodape{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+.rodape:hover{
+    background-color: black;
+}
+
+#lateral{
+    width: 480px;
+    height: 400px;
+    float: right;
+    background-image: linear-gradient(to right,  #44405B , #D79C8E );
+    border-radius: 5px;
+    margin: 5px;
+}
+
+h4{
+    font-size: 20px;
+    padding: 3  px 0px 0px 0px;
+}

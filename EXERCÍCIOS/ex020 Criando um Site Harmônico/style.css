@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+body{
+    background-image: linear-gradient( to right, #F1D8C9,#F2C3A7 ) /*Adiona degradê ao fundo*/
+}
+
+main { /* Usando a tag MAIN, eu separo o que está dentro dela, do background original, podendo editar separadamente*/
+    background-color: white;
+    border-radius: 10px; /*Arredonda os cantos do MAIN*/
+    box-shadow: 3px 3px 9px gray; /*Adiciona sombra ao MAIN*/
+    width: 600px; /*Aqui eu edito a largura do MAIN*/  
+    padding: 10px; /*Aqui eu adiciono uma pequena margem ao texto*/
+    margin: auto; /*Usando MARGIN: AUTO, eu centralizo o MAIN na página*/
+}
+
+h1{
+    text-align: center; /*Centraliza o h1*/
+   color:#0b4578 ; /*Colore o h1*/
+   text-shadow: 1px 1px 0px #072a49ac; /*Adiciona sombra ao h1*/
+}
+h2{
+   color: #125189; 
+}
+p {
+    text-align: justify;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em diferentes dispositivos ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+    <!-- A TAG picture é usada exclusivamente para indicar que haverá uma imagem dentro dela. E quando eu acrescento a TAG source media type, eu consigo dizer qual o tamanho máximo de imagem que o site vai aceitar até mostrar uma imagem menor ao usuário. As TAGS source precisam estar na ordem correta. DEBAIXO PARA CIMA: img src="", DEPOIS source media M, DEPOIS source media P... -->
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-media.png" type="image/png">
+        <img src="Imagens/imagem-grande.png" alt="Imagem Flexível">
+    </picture>
+
+</body>
+</html>

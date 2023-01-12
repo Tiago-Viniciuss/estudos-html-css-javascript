@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+
+        body{
+           background-color: white;
+        }
+
+        h1{ /*BOX LEVEL*/
+            color: white;
+            background-color: black;
+            width: 195px; /*largura*/
+            height: 36px; /*altura*/
+
+            /* Usando Shorthands, podemos simplificar o código:*/
+
+            /*PADDING espaço entre texto/borda*/
+
+            padding: 10px 10px 10px 10px; /*top, right, bottom, left ou pode ser colocado só 10*/
+
+            /*BORDER borda*/
+            border: 10px solid red;
+
+            /*MARGIN espaço borda/outros elementos*/
+
+            margin: 10px 10px 10px 10px ;
+            
+
+             /*OUTLINE entre margem/borda*/
+            outline: 5px dashed green;
+
+
+        }
+        
+        .english{
+            margin: auto;
+            border: none;
+            outline-color: rgb(0, 251, 255);
+            outline-style: dashed;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <h1 class="english">Hello, World!</h1>
+    <p>Podemos ver que o link A <a href="sunrise.jpg">link visível</a> é um exemplo de INLINE LEVEL</p>
+    <p>Já o P Parágrafo é um BOX-LEVEL</p>
+
+    <!-- CONSIGO TRANSFORMAR O BLOCK EM INLINE E VICE-VERSA, ACRESCENTANDO O DISPLAY: ; -->
+</body>
+</html>

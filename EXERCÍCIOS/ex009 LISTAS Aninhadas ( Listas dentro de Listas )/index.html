@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAS</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+   <ol type="1"> <!-- type dentro de <ol> altera o início da lista para A, a, 1, I ou i. (se eu puser start ="", posso alterar a letra ou número inicial. Ao invés de 1, pode ser 5, 8, etc.) -->
+      <li>Acordar</li>
+      <li>Tomar café</li>
+      <li>Escovar os dentes</li>
+      <li>Ir ao trabalho</li>
+      <li>Almoçar</li>
+      <li>Trabalhar mais</li>
+   </ol>
+   <h2>Listas não Ordenadas</h2> <!--Para listas que não seja necessário uma ordem-->
+   <ul type="circle"> <!--Posso alterar com o type="", também. Usando type="disc", "circle", "square"-->
+    <li>Comprar arroz</li>
+    <li>Cozinhar a carne</li>
+    <li>Jogar video-game</li>
+    <li>Almoçar</li>
+   </ul>
+   <h1>Listas Aninhadas</h1>
+   <h2>Meus animes Favoritos</h2>
+   <ol>
+        <li>Antigos</li>
+        <ol type="a">
+            <li>Naruto</li>
+            <li>Bleach</li>
+            <li>Dragon Ball Z</li>
+            <li>Yu Yu Hakusho</li>
+            <li>Hunter x Hunter</li>
+        </ol>
+        <li>Novos</li>
+        <ol type="a"> <!-- Usei o type para diferenciar -->
+            <li>Shingeki No Kyojin</li>
+            <li>Death Note</li>
+            <li>Boku No Hero</li>
+            <li>Nanatsu No Taizai</li>
+            <li>One Punch Man</li>
+        </ol>
+   </ol>
+ <!-- Se eu quiser que uma lista seja a continuação da outra, preciso usar o parâmetro START="" na segunda lista e acrescentar o número correspondente ao primeiro item da segunda lista. O START só reconhece números-->
+   <h2>Meus animes Favoritos</h2>
+   <ol>
+        <li>Antigos</li>
+        <ol type="a">
+            <li>Naruto</li>
+            <li>Bleach</li>
+            <li>Dragon Ball Z</li>
+            <li>Yu Yu Hakusho</li>
+            <li>Hunter x Hunter</li>
+        </ol>
+        <li>Novos</li>
+        <ol type="a" start="6"> <!-- Usei o type para diferenciar -->
+            <li>Shingeki No Kyojin</li>
+            <li>Death Note</li>
+            <li>Boku No Hero</li>
+            <li>Nanatsu No Taizai</li>
+            <li>One Punch Man</li>
+        </ol>
+   </ol>
+   <!-- Lista Não Ordenada dentro da Ordenada-->
+   <h2>Meus jogos favoritos</h2>
+   <ol>
+       <li>SNES</li>
+        <ul type="square">
+            <li>Bomberman 5</li>
+            <li>Super Mario World</li>
+            <li>The King of Fighters 2002</li>
+        </ul>
+        <li>Playstation 2</li>
+        <ul type="square">
+            <li>GTA San Andreas</li>
+            <li>God of War 2</li>
+            <li>Burnout</li>
+            <ul type="circle">
+                <li>Burnout Revenge</li>
+                <li>Burnout Takedown</li>
+            </ul>
+        </ul>
+   </ol>
+   <h2>Lista de Definições</h2>
+   <dl>
+        <dt>HTML</dt> <!--Termo em DT e descrição em DD-->
+        <dd>Linguagem para a criação do conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem para criação do desing de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de Programaçãoo para a criação de interatividade de um site</dd>
+   </dl>
+</body>
+</html>

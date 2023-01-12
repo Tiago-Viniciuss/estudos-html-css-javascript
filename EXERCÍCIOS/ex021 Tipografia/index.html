@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style> 
+        body{
+            background-image:linear-gradient( to left, rgb(134, 185, 134), rgb(53, 142, 53));
+            font-family:Arial, Helvetica, sans-serif;
+            /*
+            
+            Medidas Absolutas:
+            cm, mm, in (polegada), px
+            
+            Medidas Relativas: 
+            em, ex, rem, vw, vh, % 
+            
+            ( O mais recomendado é o uso do em e px, para representar tamanho de fontes)
+
+            16px geralmente é igual a 1em
+
+            */
+            font-size: 1em;
+            font-weight: normal; /* Peso da fonte*/
+            font-style: italic; /*Estilo da fonte */
+            text-decoration: underline; /*Sublinhar texto*/
+        }
+        main{
+            background-color: aliceblue;
+            margin: auto;
+            width: 600px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 5px 5px rgb(0, 58, 0);
+        }
+        h1{
+            /*font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            font-weight: bold;
+            font-style: italic;*/
+             
+        /*
+        Existe uma forma de condensar todas as configurações de fontes acima em apenas um comando. Chama-se: Shorthand
+
+        A ordem do shorthand sempre vai ser:
+        font-style >> font-weight >> font-size >> font-family
+
+        A mesma coisa que fiz em cima, fiz abaixo em uma única linha
+        */
+
+            font: italic bold 3em Arial, Helvetica, sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com fontes</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo delectus fuga rem consectetur numquam repellendus quod libero exercitationem architecto reiciendis sit, laborum inventore aliquid, natus sint. Excepturi ducimus veritatis illum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati blanditiis exercitationem totam? Corrupti, explicabo possimus tempore molestias exercitationem, voluptates ipsam nulla, impedit corporis molestiae deserunt? Vero cumque corrupti id?
+        </p>
+        <h2>Subtítulo de exercício</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quae molestias illo velit ipsum aliquid assumenda sequi sint aut! Accusamus voluptates a consequuntur dolores, placeat voluptatibus molestias officiis nulla eveniet.</p>
+    </main>
+</body>
+</html> 
