@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEF</title>
+    <style>
+        body {
+          background-color: white;
+        }
+
+        header {
+            padding-top: 100px;
+            margin: auto;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.89);
+        }
+
+        #bloco {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.815);
+        }
+
+        .caixa {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.736);
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+
+        #output {
+            margin: auto;
+            color: white;
+            max-width: 400px;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 5px;
+            padding-left: 5px;
+            background-color: transparent;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.774);
+            border-radius: 5px;
+            text-shadow: 3px 3px 5px black;
+        }
+
+        #principal {
+            max-width: 600px;
+            height: 400px;
+            margin: auto;
+            background-color: rgb(88, 66, 225);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.785);
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main id="principal">
+        <header>
+            <h1>De que país você veio?</h1>
+        </header>
+        <section>
+            <div id="bloco">
+                País  <input type="text"  id="country" class="caixa">
+                <input type="button" value="Entrar" onclick="check()" class="caixa">
+            </div>
+            <div id="output"></div>
+        </section>
+    </main>
+
+    <script>
+        function check(){
+            var country = document.getElementById('country')
+
+            var result = document.getElementById('output')
+
+            var nac = country.value
+
+            if (nac.toUpperCase() == "PORTUGAL") {
+                result.innerHTML = '<p>Você é português.</p>'
+                result.innerHTML += '<p>Bem-vindo de volta!</p>'
+            } else {
+                result.innerHTML = '<p>You are foreigner.</p>'
+                result.innerHTML += '<p>Welcome to Portugal!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
