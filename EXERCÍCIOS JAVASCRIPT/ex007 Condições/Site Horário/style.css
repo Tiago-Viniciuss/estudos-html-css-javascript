@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background-color: #281b1b;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.686);
+}
+
+section {
+    margin: auto;
+    background-color: white;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.745);
+}
+
+#msg {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#imagem {
+    display: inline;
+    margin: auto;
+    margin-left: 95px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.562);
+
+}
