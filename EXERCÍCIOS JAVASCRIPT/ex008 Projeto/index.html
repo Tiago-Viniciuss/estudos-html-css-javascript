@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise.CO</title>
+    <style>
+
+        h1 {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 2px rgb(0, 0, 0);
+            background-color: cornflowerblue;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px 0px 20px 0px;
+            border-radius: 6px 6px 0px 0px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.689);
+        }
+        main {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            max-width: 600px;
+            height: 300px;
+            margin: auto;
+            text-align: justify;
+            background-color: cornflowerblue;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.689);
+            border-radius: 0px 0px 6px 6px;
+        }
+
+        #bloco {
+            margin-left: 150px;
+        }
+
+        .caixa {
+            margin: 10px;
+            font-weight: bold;
+            border: 2px solid black;
+            padding-left: 6px;
+        }
+
+        #botao {
+            margin-left: 92px;
+            margin-top: 20px;
+        }
+
+        #botao:hover {
+            background-color: grey;
+            color: white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reajuste Salarial</h1>
+    </header>
+    <main>
+        <div id="bloco">
+           Primeiro Nome: <input type="text" id="nome" class="caixa"> <br>
+           Salário Atual: <input type="number"  id="salario" class="caixa"> <br>
+           Reajuste (%): <input type="number" id="reajuste" class="caixa"> <br>
+           <input type="button" value="Calcular Reajuste" onclick="calcular()" id="botao" class="caixa">
+        </div>
+        <div id="resul">
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
