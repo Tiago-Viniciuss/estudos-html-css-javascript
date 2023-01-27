@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando iFrames</title>
+
+        <style>
+
+            iframe {
+                display: block;
+                margin: auto;
+                width: 500px;
+                height: 500px;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+
+        </style>
+
+</head>
+<body>
+    <h1>Essa é página 01</h1>
+    
+    <!--
+        Criei uma lista abaixo com dois links. Esses links são de outras páginas minhas que serão abertas no iFrame lá abaixo. Neste caso, o usuário tem a opção de escolher qual site ele deseja visualizar, sem que necessite sair do site atual. Seria uma boa ideia para apresentação de portfólio.
+    -->
+
+    <ul>
+        <li><a href="pag02.html" target="frame">Veja a página 02</a></li>
+        <li><a href="pag03.html" target="frame">Veja a página 03</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolorum assumenda nulla laboriosam minima ad molestias! Laboriosam, laborum! Voluptates mollitia odio, nostrum quis rerum ipsum saepe quasi aliquam doloribus alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequuntur cum, accusamus sit laudantium, voluptate quas ducimus quisquam possimus quam nesciunt dolores ullam quo nam. Possimus dolores ex animi non?</p>
+
+
+    <!-- 
+        Aqui, deixei o iFrame sem conteúdo, criei um name= "frame", que vai ser o destino dos links lá da âncora acima. Além disso, substituí o SRC por um SRCDOC, que vai me permitir carregar uma tag ou imagem.
+    -->
+
+    <iframe srcdoc="<img src='imagens/img.png'>" name="frame" frameborder="0">
+
+    </iframe>
+
+
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum minus, eaque itaque vitae commodi et perspiciatis quam id atque dolor placeat fuga! Ipsam esse facilis, totam ipsum consequatur mollitia delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, sapiente dolor nisi accusamus quaerat odit quidem ullam quas explicabo rem autem enim vitae adipisci, voluptatibus doloremque perspiciatis. Iure, quasi quia.</p>
+</body>
+</html>
