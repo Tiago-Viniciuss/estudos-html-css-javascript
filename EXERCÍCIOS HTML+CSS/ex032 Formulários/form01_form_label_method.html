@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+
+  <form action="cadastro.php">
+
+    <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+
+    <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"> </p>
+
+    <p><input type="submit" value="Enviar"></p>
+
+    <!--
+      A tag FORM cria um novo formulário
+
+      A tag LABEL serve para etiquetar a palavra NOME ou SOBRENOME, fazendo com que ela tenha ligação com a caixa input correspondente
+
+      Uma label colocada antes ou após o input, define a posição da palavra em relação à caixa do input
+    -->
+
+  </form>
+
+  <!--
+    Este formulário está no Método GET, por padrão. Portanto, os dados do usuário, como nome, sobrenome, etc., aparecerão na URL.
+    O método GET só permite o envio de até 3000 bytes e não permite envio de fotos, vídeos, etc.
+
+    Para mudar o método, preciso ir na tag FORM, escrever method="" e adicionar o método pretendido entre aspas. Se eu adicionar o método POST, os dados do cadastro NÃO aparecerão na URL.
+
+    O método POST deve ser usado quando os dados forem sensíveis. Como senha, número de conta, código de segurança, endereço, CEP, etc. Porém, para deixar SEGURO DE VERDADE, é necessário estudar HTTPS e segurança de dados.
+    Para dados acima de 3000 bytes, o POST é necessário. Incluindo envio de arquivos.
+  -->
+
+</body>
+</html>

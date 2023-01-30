@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: beige;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        fieldset {
+            background-color: burlywood;
+        }
+
+        legend {
+            background-color: beige;
+            font-weight: bold;
+            padding: 0px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="30" placeholder="Insira seu nome e sobrenome">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="Insira seu melhor e-mail">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+               <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)[0-9]{4,5}-[0-9]{4}$" placeholder="(DDD)0000-0000">
+            </p>
+        </fieldset>
+
+        <!-- 
+            
+            Estudar mais sobre RegEx ( Expressões Regulares ), para melhorar os filtros para telefone 
+            
+            Ex: ^[0-9]{4}-[0-9]{4}$ significa que o formulário só aceitará o telefone se ele tiver de 4 a 5 dígitos "[0-9]{4,5}", seguidos de um traço ("-") e depois mais 4 dígitos "[0-9]{4}". 
+            
+            A expressão começa com ^ e termina com um $.
+        
+
+            Também posso substituir o [0-9]{} por \d{}. Ambos estão informando que haverá X dígitos. Que pode variar. Podendo ser:
+            \d{4,5} de 4 a 5 dígitos ou também
+            \d{5} 5 dígitos
+
+            Para acrescentar o DDD, devo primeiro abrir parênteses \(, depois 2 dígitos \d{2}, depois fechar parênteses \).
+            Resultado > "\(\d{2}\)"
+            Isso vai exigir que eu coloque o DDD 75, 79, 11, 21, etc.
+
+            ^\(\d{2}\)[0-9]{4}-[0-9]{4}$
+            ^\(\d{2}\)\d{4}-\d{4}$
+
+            Qualquer uma dessas duas expressões estão pedindo um resultado tipo esse abaixo:
+
+            (79)8859-7771, é interessante eu dar uma ideia ao usuário usando um
+            
+            placeholder > placeholder="(DDD)0000-0000" 
+            
+            ou deixando um valor fixado > value="(DDD)"
+
+
+            FIELDSET cria um campo, agrupando as informações em uma caixa.
+
+            LEGEND dá "título" ao fieldset
+
+            Posso usar os fieldsets para separar as informações por assuntos distintos
+
+        -->
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Dados como jogador:</legend>
+            <p>
+                <label for="inickname">Nickname:</label>
+                <input type="text" name="nickname" id="inickname" placeholder="Insira seu nickname" minleght="5" maxlength="15" required>
+            </p>
+            <p>
+                <label for="idata">Data de adesão:</label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+
+
+
+    </form>
+
+    <!--
+        Se eu não quiser os botões ENVIAR e LIMPAR repetidos em todos os FIELDSETS, preciso colocar TODOS os fieldsets em um único FORM. Para que o envio ou limpeza de informações seja de todo o formulário.
+    -->
+
+</body>
+</html>

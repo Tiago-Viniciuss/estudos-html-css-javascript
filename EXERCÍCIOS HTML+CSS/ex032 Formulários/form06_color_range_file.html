@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Testando formulário:</h1>
+    <form action="cadastro.php"     method="post">
+
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação:</label><input type="range" name="nivel" id="inivel">
+        </p>
+        <!--
+            Por padrão, o RANGE começa de 0 a 100 e selecionado em 50, na metade. Mas eu posso configura-lo usando min="" e max=""
+
+            Veja no código abaixo.
+        -->
+
+        <p>
+            <label for="inivel5">Nível de Satisfação de 0 a 5:</label><input type="range" name="nivel5" id="inivel5" min="1" max="5"> <!-- Aqui, ele começa em 3, na metade -->
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do perfil: </label><input type="file" name="foto" id="ifoto">
+        </p>
+
+        <!--
+            Para envio de arquivos, DEVO USAR O METHOD POST
+        -->
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php
+    " method="post">
+
+    <p>
+        <label for="iusuario">Usuário:</label>
+        <input type="text" name="usuario" id="iusuario" required placeholder="Nome do Usuário">
+    </p>
+    <p>
+        <label for="isenha">Senha:</label>
+        <input type="password" name="sen" id="isenha" size="10" required minlength="6" maxlength="10">
+    </p>
+    <p><input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    </p>
+
+    </form>
+
+    <!-- 
+        AUTOCOMPLETE:
+        Caso eu queira que apareça a sugestão de nome, senha, etc. na caixa em questão, eu devo ativar na tag FORM, o atributo AUTOCOMPLETE = "ON". Mas, para que ele seja assertivo, devo incluir a o atributo AUTOCOMPLETE nas nos INPUTS correspondentes.
+        Por exemplo: No input Usuário, devo incluir o AUTOCOMPLETE = "username".
+        Para senha, existe a opção de NEW PASSWORD, caso eu não tenha ou precise de uma senha guardada. Ou CURRENT PASSWORD, no caso de um formulário de login.
+
+        ----------------------------
+
+        REQUIRED e PLACEHOLDER:
+        Dentro do input do usuario, eu inclui 2 atributos: REQUIRED = É obrigatório preencher o campo em questão. PLACEHOLDER = É uma dica para o usuário escrever na caixa aquilo que se espera que ele escreva. Deve seer direto e simples.
+
+        ----------------------------
+
+        SIZE, MIN-LENGHT, MAX-LENGHT:
+        Dentro do input da senha, eu inclui 4 atributos: SIZE = Edita o tamanho da caixa para caber Y letras. Porém, isso não impede o usuário de digitar mais. REQUIRED = É obrigatório preencher o campo em questão. MIN-LENGHT = O campo deve conter no mínimo X caracteres. MAX-LENGHT = O campo deve conter no máximo X caracteres.
+    -->
+
+</body>
+</html>

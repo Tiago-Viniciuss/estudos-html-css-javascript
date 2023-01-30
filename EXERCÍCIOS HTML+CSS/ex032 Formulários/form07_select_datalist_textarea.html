@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Testando Formulários</h1>
+    <fieldset>
+        <legend>Dados do Candidato</legend>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iestado">Estado:</label>
+                <select name="estado" id="iestado">
+                    <optgroup label="Região Nordeste">
+                        <option value="" selected>--- Escolha ---</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                </select>
+            </p>
+                <!--
+                    SELECT é uma tag para seleção de coisas. No exemplo acima, usei estados do Brasil. Envelopei os estados com a tag OPTGROUP que separa os itens por grupo. Dentro de cada OPTGROUP, usei uma tag OPTION, que carrega o nome do item.
+                    O atributo SELECTED, define qual item aparecerá primeiro. Neste caso, criei um OPTION com VALUE vazio, com SELECTED ativo e escrevi "---Escolha---"
+                -->
+            <p>
+                <label for="icidade">Cidade:</label>
+                <select name="cidade" id="icidade">
+                    <optgroup label="Cidades de Sergipe">
+                        <option value="" selected>--- Escolha ---</option>
+                        <option value="AJU">Aracaju</option>
+                        <option value="ITA">Itabaiana</option>
+                        <option value="LGT">Lagarto</option>
+                    </optgroup>
+                </select>
+            </p>
+        
+            <!--
+                Se eu quiser criar uma lista com itens que eu possa pesquisar e selecionar, preciso usar o DATALIST. Inclusive, o DATALIST permite ao usuário, escrever algo que não esteja na lista de itens. E isso será enviado como dado válido para o banco de dados.
+                
+                Antes, devo criar um input TEXT e criar uma ligação entre ele e o DATALIST através de uma ID. Dentro de DATALIST, eu crio várias OPTION com os nomes dos itens. 
+                
+                Abaixo, criei uma com nomes de profissões. Uma delas, criei um VALUE e deixei preenchido com a sigla da profissão, como teste.
+            -->
+            <p>
+                <label for="iprofi">Profissão: </label>
+                <input type="text" name="profi" id="iprofi" list="listaprofi">
+                <datalist id="listaprofi">
+                     <option>Administrador</option>
+                     <option>Contador</option>
+                     <option>Desenvolvedor</option>
+                     <option value="PROF">Professor</option>
+                     </optgroup>
+                </datalist>
+            </p>
+
+            <label for="itexto">Mensagem:</label> <br>
+
+            <textarea name="texto" id="itexto" cols="30" rows="10" placeholder=" Escreva aqui..."></textarea>
+
+            <!--
+                Na TEXTAREA, o usuário pode escrever uma mensagem. Neste caso acima, quando chegar nos 30 caracteres, o texto quebra para a próxima linha. O atributo rows define que há 10 linhas na caixa, mas na TEXTAREA, a quantidade de caracteres é infinita. Lembrando que para isto ocorrer, devo usar o formulário com o METHOD = POST
+            -->
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>

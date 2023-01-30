@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: skyblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            background-color: coral;
+            font-weight: bolder;
+            max-width: 600px;
+            border: 2px solid black;
+        }
+
+        legend {
+            background-color: beige;
+            padding: 0px 5px;
+            font-weight: bold;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando formulários:</h1>
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo:</legend>
+
+            <input type="radio" name="sexo" id="imasculino" value="M"><label for="imasculino">Masculino</label> <br>
+            <input type="radio" name="sexo" id="ifeminino" value="F"><label for="ifeminino">Feminino</label>
+
+            <!--
+                No INPUT RADIO, é OBRIGATÓRIO dar o MESMO NAME a todas as opções. Senão, quando eu selecionar um e depois selecionar o outro, ambos permanecerão selecionados. No caso acima, ambos os sexos tem o mesmo NAME="sexo", porém ID diferentes. O RADIO só permite selecionar UM ÚNICO item. Coloquei o VALUE em ambos. Caso contrário, no envio do formulário estaria "sexo=on" ao invés de "sexo=M ou sexo=F"
+            -->
+
+        </fieldset>
+<br>
+        <fieldset>
+            <legend>Esportes favoritos:</legend>
+
+            
+            <input type="checkbox" name="basquete" id="ibasquete"><label for="ibasquete">Basquete</label>
+            <br>
+            <input type="checkbox" name="futebol" id="ifutebol"><label for="ifutebol">Futebol</label> <br>
+            <input type="checkbox" name="natacao" id="inatacao"><label for="inatacao">Natação</label> <br>
+            <input type="checkbox" name="tenis" id="itenis"><label for="itenis">Tênis</label>
+        </fieldset>
+        
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
