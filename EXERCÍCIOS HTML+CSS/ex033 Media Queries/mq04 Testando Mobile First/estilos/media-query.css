@@ -14,18 +14,96 @@
     Grandes telas: acima de 1200px
 */
 
-@media print {
+@media print { /* IMPRESSÃO */
+   body {
+    font-family:'Courier New', Courier, monospace;
+   } 
+
+
+   main {
+    border: 2px solid black;
+   }
+
+   main h1 {
+    color: black;
+    text-shadow: none;
+   }
+
+   img#phone {display: none;}
+   img#tablet {display: none;}
+   img#print {display: block;}
+   img#pc {display: none;} 
+   img#tv {display: none;}
+
+    #txtcell {display: none;}
+    #txttab { display: none;}
+    #txtprint{
+        display: block;
+        text-shadow: none;
+        color: black;
+        }
+    #txtpc {display: none;}
+    #txttv {display: none;}
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-    
+@media screen and (min-width: 768px) and (max-width: 1024px){ /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+        img#phone {display: none;}
+        img#tablet {display: block;}
+        img#print {display: none;}
+        img#pc {display: none;} 
+        img#tv {display: none;}
+
+        #txtcell {display: none;}
+        #txttab { display: block;}
+        #txtprint {display: none;}
+        #txtpc {display: none;}
+        #txttv {display: none;}
+
 }
 
-@media screen and (min-width: 992px) and (max-width:1200px){
+@media screen and (min-width: 1024px) and (max-width:1200px){ /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
     
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;} 
+    img#tv {display: none;}
+
+        #txtcell {display: none;}
+        #txttab { display: none;}
+        #txtprint{display: none;}
+        #txtpc {display: block;}
+        #txttv {display: none;}
+
 }
 
-@media screen and (min-width: 1200px){
-    
+@media screen and (min-width: 1200px){ /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 1200px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;} 
+    img#tv {display: block;}
+
+        #txtcell {display: none;}
+        #txttab { display: none;}
+        #txtprint{display: none;}
+        #txtpc {display: none;}
+        #txttv {display: block;}
 }

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    menu {
+        display: block;
+        width: 100vw;
+        background-color:  rgb(50, 50, 50);
+        width: 100%;
+    }
+
+    header {
+        box-shadow: none;
+    }
+    
+    ul {
+        display: flex;
+        
+    }
+    
+    menu a {
+        border: none;
+        padding: 10px;
+        
+    }
+
+    #burguer {
+        display: none;
+    }
+
+    main {
+        width:px;
+    }
+
+    article {
+        column-count: 2;
+    }
+
+    article p {
+        padding-top: 10px;
+    }
+    
+}
+
+@media print {
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 2em;
+    }
+    
+    
+    menu {
+        display: none;
+    }
+
+    ul {
+        display: none;
+    }
+
+    li {
+        display: none;
+    }
+    
+    #burguer {
+        display: none;
+    }
+    
+    main {
+        width:px;
+    }
+    
+    article {
+        column-count: 2;
+    }
+    
+    article p {
+        padding-top: 10px;
+    }
+    
+    main::after {
+        content: "Artigo escrito por Tiago Vinícius de Jesus";
+        font-weight: bolder;
+    }
+
+
+
+}
