@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: cornsilk;
+}
+
+header {
+    background-color: grey;
+    text-align: center;
+    margin: 0px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+
+header h1 {
+    margin: 0px;
+    font-size: 1.7em;
+}
+
+#sanduiche {
+    background-color: grey;
+    font-size: 1.6em;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+
+menu {
+    background-color: grey;
+    color: white;
+    text-align: left;
+    padding: 0px;
+    width: 70%;
+    height: 600px;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+}
+
+menu ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+menu > ul > li {
+    padding: 10px;
+}
+
+menu a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    width: 99vw;
+    margin: auto;
+    padding-top: 20px;
+
+}
+
+section h2 {
+    text-align: center;
+}
+
+#img {
+    display: block;
+    margin: auto;
+}
+
+section h3 {
+    padding-left: 5px;
+    margin: 10px;
+}
+
+section p {
+    margin: 0px 15px;
+    text-align: justify;
+    font-size: 0.9em;
+    text-indent: 15px;
+    line-height: 2em;
+}
+
+footer {
+    background-color: grey;
+    height: 200px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 0.7em;
+}

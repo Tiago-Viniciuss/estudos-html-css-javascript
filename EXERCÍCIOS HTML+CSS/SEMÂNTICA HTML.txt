@@ -1,0 +1,176 @@
+
+Não divida, crie seções.
+
+
+No HTML 4.0 era muito comum criarmos muitos divs de acordo com nosso layout gráfico, não com nosso conteúdo. 
+
+O resultado foi um monte confuso de tags <div> sem relevância semântica.
+
+Desde o HTML5 temos a tag <section> , que é muito útil para dividir nosso conteúdo principal em grupos menores de conteúdo.
+
+Os elementos <section> podem ser aninhados e é importante ressaltar que sempre deve ter um elemento header para ficar bem formado.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+Conteúdo principal?
+
+
+Sim, o conteúdo principal. O que é mais importante quando se trata de documentos? A barra de navegação? 
+
+Um controle deslizante? Ícones sociais? Formulários? Não!
+
+O mais importante para um documento é a própria informação, tentando ser preservada e transmitida. 
+
+Quando nos referimos a "conteúdo principal" estamos falando de informação, todo o resto é completamente supérfluo. 
+
+Que podem ser removidos ou editados à vontade, sem afetar a integridade das informações. 
+
+É por isso que identificar o "conteúdo principal" é encontrar os critérios para a construção de um documento HTML mais semântico.
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+Independente
+
+
+Se você encontrar em seu documento alguma seção que funcione perfeitamente como uma informação completa
+
+e possa ser substituída sem afetar a integridade do seu documento, você tem um <article> . 
+
+Postagens e notícias são excelentes exemplos de <article> . 
+
+Você pode gerá-los e trocá-los à vontade, mas isso não afetará a estrutura do documento.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+<section> e <article> são colegas de trabalho, não parentes.
+
+
+É comum no início, quando você tenta usar HTML semântico, lutar com a decisão sobre como aninhar <section> e <article> .
+
+Quem é o pai? Quem é a criança? Resposta curta, nenhum deles.
+
+Esses elementos não foram concebidos para fazer parte de uma hierarquia, na verdade, eles são feitos para trabalhar em conjunto.
+
+Quando se trata de criar estruturas semânticas você pode utilizá-las uma dentro da outra sem nenhum problema.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Apresentação formal do conteúdo
+
+
+É normal ter seções que introduzem o próximo conteúdo, talvez por meio de um conjunto de cabeçalhos ou uma imagem.
+
+Para esses casos, podemos usar <header> para agrupar todos os elementos que perseguem esse propósito.
+
+Você pode ter vários cabeçalhos em seu documento, mas há apenas uma condição,
+
+nunca os use dentro de outro elemento <header> , <footer> ou <address> .
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Fechando formalmente o conteúdo
+
+
+Se há uma maneira de abrir, deve haver uma maneira de fechar! Sim! Você está certo!
+
+Se você deseja marcar elementos relevantes no final de uma seção, pode usar <footer> .
+
+Créditos, direitos autorais, sitemaps, navbars secundários, etc. 
+
+Todos esses tipos de elementos podem ser agrupados dentro de uma tag <footer> .
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+E os controles?
+
+
+É sabido que uma das vantagens do HTML é permitir a navegação entre os documentos. 
+
+É por isso que estamos sempre agrupando links em navbars junto com outros elementos como ícones e imagens. 
+
+Existe também uma tag semântica para esse fim, o elemento <nav> . 
+
+Não importa qual técnica você use para suas navbars, coloque tudo no elemento <nav> .
+
+Este elemento pode estar dentro de qualquer outro elemento de bloco no documento HTML, mas use-o com sabedoria.
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Só pode haver um.
+
+
+Apesar de ter identificado o conteúdo principal, é possível que ainda precisemos rotular uma seção do documento como a seção principal.
+
+Isso é facilmente resolvido usando o elemento <main> . O elemento <main> é útil para rotular conteúdo exclusivo no documento.
+
+Mas como você pode ler no título, pode haver apenas um, um documento, um elemento <main> . 
+
+Esse elemento semântico é especialmente útil para otimização de mecanismos de pesquisa.
+
+Quando os bots da web chegarem à sua página, o elemento <main> gritará LEIA-ME! Portanto, não negligencie isso.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Se não for principal, coloque-o de lado!
+
+
+Falamos sobre elementos semânticos que são muito úteis. 
+
+Elementos como <section> , <article> , <main> , <header> , <footer> e <nav> são ótimas ferramentas para escrever código HTML semântico. 
+
+Mas e aquele conteúdo relacionado, mas que não faz parte do conteúdo principal? Bom, temos uma tag especial para esses casos: <aside> .
+
+Use-o quando precisar rotular conteúdo extra, por exemplo, feeds de notícias, ofertas comerciais, formulário de boletim informativo, etc.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Apenas imagine!
+
+
+E por último, mas não menos importante, temos um elemento útil para rotular todo aquele conteúdo que está no fluxo principal, mas pode ser descartado quando necessário.
+
+ Isso é de alguma forma semelhante a <article> porque é um elemento independente que pode ser colocado ou removido à vontade. 
+
+Estamos falando de <figura> . Essa tag é especialmente útil quando se trata de agrupar conteúdo auxiliar.
+
+Junto com seu companheiro <figcaption> , <figure> é excelente para marcar conteúdo como ilustrações, gráficos, diagramas, fotos, etc.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Finalmente...
+
+
+Uma última dica, lembre-se que o mesmo problema com <div> pode ocorrer com qualquer outro elemento, não abuse de tags!
+
+Não importa se você usa apenas elementos HTML semânticos, se você abusar, seu documento não será um documento bem formado e semântico.
