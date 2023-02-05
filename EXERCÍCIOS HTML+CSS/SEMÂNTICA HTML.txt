@@ -10,6 +10,8 @@ Desde o HTML5 temos a tag <section> , que é muito útil para dividir nosso cont
 
 Os elementos <section> podem ser aninhados e é importante ressaltar que sempre deve ter um elemento header para ficar bem formado.
 
+A <section>  serve para criar um conteúdo que não muda, diferente do article, onde o conteúdo pode ser alterado com frequência.
+
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
@@ -17,9 +19,9 @@ Os elementos <section> podem ser aninhados e é importante ressaltar que sempre 
 Conteúdo principal?
 
 
-Sim, o conteúdo principal. O que é mais importante quando se trata de documentos? A barra de navegação? 
+Sim, o conteúdo principal. O que é mais importante quando se trata de documentos?
 
-Um controle deslizante? Ícones sociais? Formulários? Não!
+A barra de navegação?  Um controle deslizante? Ícones sociais? Formulários? Não!
 
 O mais importante para um documento é a própria informação, tentando ser preservada e transmitida. 
 
@@ -28,6 +30,8 @@ Quando nos referimos a "conteúdo principal" estamos falando de informação, to
 Que podem ser removidos ou editados à vontade, sem afetar a integridade das informações. 
 
 É por isso que identificar o "conteúdo principal" é encontrar os critérios para a construção de um documento HTML mais semântico.
+
+Neste caso, usamos a tag <main> para indicar o conteúdo realmente principal.
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -44,12 +48,14 @@ Postagens e notícias são excelentes exemplos de <article> .
 
 Você pode gerá-los e trocá-los à vontade, mas isso não afetará a estrutura do documento.
 
+O oposto do <article> são as tags main e section.
+
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
 
 
-<section> e <article> são colegas de trabalho, não parentes.
+<section>  e  <article>  são colegas de trabalho, não parentes.
 
 
 É comum no início, quando você tenta usar HTML semântico, lutar com a decisão sobre como aninhar <section> e <article> .
@@ -59,6 +65,8 @@ Quem é o pai? Quem é a criança? Resposta curta, nenhum deles.
 Esses elementos não foram concebidos para fazer parte de uma hierarquia, na verdade, eles são feitos para trabalhar em conjunto.
 
 Quando se trata de criar estruturas semânticas você pode utilizá-las uma dentro da outra sem nenhum problema.
+
+Geralmente, cria-se um <article> e dentro dele, as seções do conteúdo.
 
 
 
@@ -77,6 +85,10 @@ Para esses casos, podemos usar <header> para agrupar todos os elementos que pers
 Você pode ter vários cabeçalhos em seu documento, mas há apenas uma condição,
 
 nunca os use dentro de outro elemento <header> , <footer> ou <address> .
+
+Você pode criar um  main e dar um cabeçalho ao main.
+
+Ou criar um article dar um cabeçalho ao article.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -99,7 +111,7 @@ Todos esses tipos de elementos podem ser agrupados dentro de uma tag <footer> .
 
 
 
-E os controles?
+E a navegação para outros links principais?
 
 
 É sabido que uma das vantagens do HTML é permitir a navegação entre os documentos. 
@@ -111,6 +123,10 @@ Existe também uma tag semântica para esse fim, o elemento <nav> .
 Não importa qual técnica você use para suas navbars, coloque tudo no elemento <nav> .
 
 Este elemento pode estar dentro de qualquer outro elemento de bloco no documento HTML, mas use-o com sabedoria.
+
+Se quiser pôr links no meio do seu documento, no texto, por exemplo, não é necessário usar o nav. Apenas o  <a>.
+
+A <nav> deve conter aqueles links que não mudam de uma página para outra.
 
 
 
@@ -147,6 +163,8 @@ Mas e aquele conteúdo relacionado, mas que não faz parte do conteúdo principa
 
 Use-o quando precisar rotular conteúdo extra, por exemplo, feeds de notícias, ofertas comerciais, formulário de boletim informativo, etc.
 
+O <aside> deve estar indiretamente relacionado ao conteúdo circundante.
+
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -157,11 +175,11 @@ Apenas imagine!
 
 E por último, mas não menos importante, temos um elemento útil para rotular todo aquele conteúdo que está no fluxo principal, mas pode ser descartado quando necessário.
 
- Isso é de alguma forma semelhante a <article> porque é um elemento independente que pode ser colocado ou removido à vontade. 
+Isso é de alguma forma semelhante a <article> porque é um elemento independente que pode ser colocado ou removido à vontade. 
 
-Estamos falando de <figura> . Essa tag é especialmente útil quando se trata de agrupar conteúdo auxiliar.
+Estamos falando de <figure> . Essa tag é especialmente útil quando se trata de agrupar conteúdo auxiliar.
 
-Junto com seu companheiro <figcaption> , <figure> é excelente para marcar conteúdo como ilustrações, gráficos, diagramas, fotos, etc.
+Junto com seu companheiro <figcaption> , <figure> é excelente para marcar/comentar conteúdo como ilustrações, gráficos, diagramas, fotos, etc.
 
 
 

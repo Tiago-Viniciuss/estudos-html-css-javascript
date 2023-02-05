@@ -1,0 +1,62 @@
+
+Use apenas um elemento <h1> para uma folha de código
+
+
+Existem seis tags de cabeçalho diferentes em HTML,   <h1>para <h6>. 
+
+A <h1>tag é o cabeçalho principal (assunto da página da web), enquanto a <h6>tag é o cabeçalho menos importante.
+
+A <h1> é maior que a <h2>, a <h2> é maior que a <h3>, até a <h6>. 
+
+Cada um dos títulos diminui de tamanho de acordo com sua importância.
+
+
+É importante evitar o uso de mais de um elemento <h1> para uma folha de código.
+
+er apenas um <h1>elemento em uma página da web é vital para Search Engine Optimization (SEO).
+
+Ele ajuda os mecanismos de pesquisa a entender do que se trata uma página da web (a ideia principal de uma página da web).
+
+Ao usar as tags de cabeçalho, é vital proceder de <h1>para <h2>para <h3>para <h4>e assim por diante...
+
+
+
+Não use <h1>e pule para <h3>ao usar tags de cabeçalho. 
+
+É difícil para os visitantes da web que usam um leitor de tela entender o conteúdo de sua página da web quando você pula os níveis de título.
+
+Um leitor de tela é uma tecnologia que ajuda as pessoas com dificuldade de visualização a acessar
+
+e interagir com conteúdo digital, como sites ou aplicativos por meio de áudio ou toque. 
+
+Os principais usuários de leitores de tela são pessoas cegas ou com visão muito limitada.  
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Use o elemento figure para adicionar legendas às suas imagens em HTML
+
+
+É aconselhável usar o <figure>elemento ao adicionar legendas às suas imagens. 
+
+É importante usar o <figcaption>elemento junto com o <figure>elemento para que funcione.
+
+É importante adicionar legendas às suas imagens desta forma para:
+
+	* Otimização para mecanismos de busca: é mais fácil encontrar suas imagens nos mecanismos de busca.
+
+	* Será mais fácil para os visitantes da web que usam leitores de tela entender o conteúdo de sua página da web.
+
+A tag <figcaption> substitui um <p> na hora de comentar uma foto.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
