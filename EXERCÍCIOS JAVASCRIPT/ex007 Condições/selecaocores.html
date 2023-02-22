@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            width: 500px;
+            margin: auto;
+        }
+
+        .cores {
+            width: 40px;
+            height: 40px;
+        }
+
+        #cor1 {
+            background-color: black;
+        }
+
+        #cor2 {
+            background-color: blue;
+        }
+
+        #cor3 {
+            background-color: red;
+        }
+
+        #resultado {
+            width: 50px;
+            height: 50px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <br> <br>
+        <div id="cor1" class="cores"></div>
+        <div  id="cor2" class="cores"></div>
+        <div  id="cor3" class="cores"></div>
+        <label for="cor">Qual cor você prefere? </label><input type="text" name="cor" id="cor">
+        <br> <br>
+        <input type="submit" value="Conferir" onclick="conferirCor()">
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function conferirCor() {
+            var preferencia = document.getElementById('cor').value
+            
+            var resultado = document.getElementById('resultado')
+
+            if (preferencia == 'preto') {
+                resultado.style.background = 'black'
+            } else if (preferencia == 'azul') {
+                 
+                    resultado.style.background = 'blue'
+                
+            } else if (preferencia == 'vermelho') {
+                resultado.style.background = 'red'
+            } else if (preferencia != 'preto' && preferencia != 'azul' && preferencia != 'vermelho') {
+                alert('Digite uma cor válida!')
+            }
+        }
+
+       
+    </script>
+
+</body>
+</html>

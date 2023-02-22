@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #fundo {
+            background-color: white;
+        }
+        
+        #tela {
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            background-color: white;
+            border: 2px solid black;
+            margin-top: 30px;
+            border-radius: 20px;
+        }
+
+        #paragrafo {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            padding: 40px;
+            text-indent: 40px;
+            color: black;
+        }
+    </style>
+</head>
+<body id="fundo">
+    
+        <input type="button" value="Tema claro" id="temaclaro" onclick="temaClaro()">
+
+
+       <br> <br>
+
+        <input type="button" value="Tema escuro" id="temaescuro" onclick="temaEscuro()">
+
+        <div id="tela">
+            <p id="paragrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus maiores nulla non magni enim in beatae ab, omnis unde eum quisquam quod cupiditate tenetur hic optio voluptates assumenda esse. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi sunt nemo molestiae minus officia porro pariatur earum esse ducimus impedit nostrum cum ad dolorem corporis, laudantium quibusdam illum, temporibus odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum et ex error facilis! Tempora nisi ipsum neque, sint laborum consequatur hic. Cumque tenetur quisquam eveniet. Fuga magnam nostrum dolor? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus maiores nulla non magni enim in beatae ab, omnis unde eum quisquam quod cupiditate tenetur hic optio voluptates assumenda esse. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi sunt nemo molestiae minus officia porro pariatur earum esse ducimus impedit nostrum cum ad dolorem corporis, laudantium quibusdam illum, temporibus odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum et ex error facilis! Tempora nisi ipsum neque, sint laborum consequatur hic. Cumque tenetur quisquam eveniet. Fuga magnam nostrum dolor?</p>
+        </div>
+   
+
+
+        <script>
+            function temaClaro() {
+
+                var fundo = document.getElementById('fundo')
+                var tela = document.getElementById('tela')
+                
+                fundo.style.background = 'white'
+                tela.style.background = 'white'
+                tela.style.border = '2px solid black'
+                paragrafo.style.color = 'black'
+            }
+
+            function temaEscuro() {
+                var fundo = document.getElementById('fundo')
+                var tela = document.getElementById('tela')
+                var paragrafo = document.getElementById('paragrafo')
+
+                fundo.style.background = 'black'
+                tela.style.background = 'black'
+                tela.style.border = '2px solid white'
+                paragrafo.style.color = 'white'
+                
+            }
+            
+
+        </script>
+</body>
+</html>

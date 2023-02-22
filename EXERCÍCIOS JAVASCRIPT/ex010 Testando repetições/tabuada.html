@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="num" id="txtn"><input type="button" value="Gerar Tabuada" onclick="tabuada()"> <br>
+    <select name="tabuada" id="seltab" size="10">
+        <option>Digite um número acima</option>
+    </select>
+    
+    <script>
+        function tabuada() {
+
+          let num = document.getElementById('txtn')
+          let tab = document.getElementById('seltab')
+          if (num.value.length == 0) {
+            alert('[ERRO] Digite um número!')
+           
+          } else {
+             n = Number(num.value)
+             c = 1
+             tab.innerHTML = ''
+             while (c <= 10) {
+                let item = document.createElement('option')
+                item.text = `${n} x ${c} = ${n*c}`
+                tab.appendChild(item)
+                c++
+             }
+          }
+          
+        
+          
+        }
+    </script>
+</body>
+</html>

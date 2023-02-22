@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.container {
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container div {
+    background-color: #ccc;
+    border: 1px solid blue;
+    padding: 20px;
+}
+
+#item-1 {
+    grid-column-start: 1; /* Comecei na coluna 1 e terminei na 4, pois o grid conta começando por 0 */
+    grid-column-end: 4;
+}
+
+/* Acima, eu modifiquei na horizontal */
+
+#item-2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+/* Agora, na vertical */
+
+#item-3 {
+    justify-self: end;
+    height: 200px;
+}
+
+#item-4 {
+    align-self: center;
+}
+
+#item-5 {
+    justify-self: start;
+    height: 200px;
+}
+
+#item-6 {
+    align-self: end;
+}

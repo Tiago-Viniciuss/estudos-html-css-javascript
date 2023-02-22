@@ -5,11 +5,11 @@ function comecar() {
     var inicio = Number(ini.value)
     
 
-    while (inicio <= 20) {
+    while (inicio < 20) {
         inicio = inicio + 1
         contagem.innerHTML = `${inicio}`
-    }
+    } 
 
-
+    
 
 }

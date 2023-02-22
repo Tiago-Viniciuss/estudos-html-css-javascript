@@ -7,6 +7,7 @@ function calcular() {
     var salario = Number(sal.value)
     var reajuste = Number(reaj.value)
     var novosalario = salario + (salario*reajuste/100)
+    
     resultado.innerHTML = `<p>De acordo com o reajuste de ${reajuste}%,<br>o novo salário de ${nome} será o valor de R$${novosalario}</p>`
     resultado.style.textAlign = 'center'
     resultado.style.backgroundColor = 'white' 

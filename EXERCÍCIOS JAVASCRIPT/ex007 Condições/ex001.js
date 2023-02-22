@@ -1,4 +1,5 @@
-var velo = 70
+var velo = 50
+
 if (velo > 60) { // Condição Simples
     console.log(`Sua velocidade é de ${velo}km/h e a máxima permitida é de 60km/h. Foste MULTADO!`)
 }
